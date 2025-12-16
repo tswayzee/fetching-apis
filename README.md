@@ -1,7 +1,7 @@
-## Fetching APIs with `fetch()` in JavaScript
+# Fetching APIs with `fetch()` in JavaScript
 
 
-#### :books: Learning Goal
+### :books: Learning Goal
 
 This project is in reference to the [Consuming an API Level Up](https://generalassembly.instructure.com/courses/1243/pages/consuming-an-api?module_item_id=134107). The goal here is to showcase how to consume API data within an express application. By the end of this walkthrough, you will be able to:
 - Explain what an API is and how `fetch()` works
@@ -9,19 +9,19 @@ This project is in reference to the [Consuming an API Level Up](https://generala
 - Build an Express route that fetches API data
 - Render results in an EJS view
 
-#### :confused: What is an API?
+### :confused: What is an API?
 
 An API lets your app request data from another service.
 
 Example: Your app asks OMDb: "Search movies titled 'Batman'." OMDb responds with JSON data!
 
-#### :hand: What is `fetch()`?
+### :hand: What is `fetch()`?
 
 `fetch()` is a JavaScript function for making HTTP requests. You use fetch when you need to:
 - Get data from a third-party API (movies, weather, maps, etc.)
 - Work with data that isn’t stored in your own database
 
-#### :computer: Setup
+### :computer: Setup
 1) Create and initialize your project with the following commands:
    - Create project directory: `mkdir fetching-apis`
    - Change directory: `cd fetching-apis`
@@ -36,7 +36,7 @@ Example: Your app asks OMDb: "Search movies titled 'Batman'." OMDb responds with
    - `dotenv`: loads environment variables from .env
    - `ejs`: lets us render dynamic HTML templates
 
-#### :movie_camera: Get an OMDb API Key 
+### :movie_camera: Get an OMDb API Key 
 In this walkthrough, we're going to be using OMDb to make API requests. OMDb (The Open Movie Database) is a public API that provides movie, TV show, and actor data that developers can fetch and use in their applications.
 1) Go to the OMDb website: http://www.omdbapi.com/
 2) Click API Key
@@ -57,7 +57,7 @@ PORT=3123
 node_modules
 ```
 
-#### :dvd: OMDb API Request Basics
+### :dvd: OMDb API Request Basics
 
 OMDb docs: http://www.omdbapi.com/#usage
 
@@ -158,7 +158,7 @@ The **JSON Response** from the request will look like this:
 }
 ```
 
-#### :trident: Let's Code!
+### :trident: Let's Code!
 
 :feet: **Step 1**: Add the following starter code in `server.js`:
 ```
@@ -345,12 +345,12 @@ touch views/movies/index.ejs
 </html>
 ```
 
-#### :checkered_flag: **Test It!** 
+### :checkered_flag: **Test It!** 
 1) If server isn't running: `node server.js` or `nodemon`
 2) Go to: `http://localhost:3000`
 3) Search a movie title (ex: matrix). You should be redirected to `/movies?q=matrix` and see the results rendered!
 
-#### :rocket: Continue to Level Up!
+### :rocket: Continue to Level Up!
 - [OMDb Docs](https://www.omdbapi.com/#usage): play around with more advanced queries
 - [Saving API Data With Mongoose](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/consuming-an-api/saving-api-data-with-mongoose/): to get an idea of how to save your data to MongoDB
 - Add styling to the project

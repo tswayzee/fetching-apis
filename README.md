@@ -203,11 +203,15 @@ touch views/index.ejs
 
 In `views/index.ejs`. We're going to setup a form, a couple of code snippets to pay attention to:
 
-`<form action="/movies" method="GET">`
-`action="/movies"` 
+```html
+<form action="/movies" method="GET">`
+`action="/movies"`
+```
 - Tells the browser where to send the request when the form is submitted, in our case: `/movies`
 
-`<input type="text" name="q" placeholder="Search movies..." />` 
+```html
+<input type="text" name="q" placeholder="Search movies..." />
+```
 - The input field allows the user to type in a search term. The `name="q"` attribute defines the key used in the query string, so whatever the user enters can be accessed in `server.js` using `req.query.q`.
 
 :pushpin: Complete code for `views/index.ejs`:

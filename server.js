@@ -33,7 +33,7 @@ app.get('/movies', async (req, res) => {
         const details = data.Search
         res.render('movies/index.ejs', { 
             query, 
-            details: data.Search, 
+            details, 
             error: null 
         })
     } catch (error) {

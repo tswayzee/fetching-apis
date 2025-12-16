@@ -175,6 +175,8 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+// API KEY
+const API_KEY = process.env.API_KEY;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
@@ -246,7 +248,8 @@ app.get("/", (req, res) => {
 - Convert to JSON with `response.json()`
 - Render results (in step 5!)
 
-:pushpin: Add to `server.js`
+:pushpin: Add the key to `server.js`
+
 ```js
 app.get('/movies', async (req, res) => {
     try {
@@ -264,7 +267,7 @@ app.get('/movies', async (req, res) => {
         const details = data.Search
         res.render('movies/index.ejs', { 
             query, 
-            details: data.Search, 
+            details, 
             error: null 
         })
     } catch (error) {

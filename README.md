@@ -204,8 +204,7 @@ touch views/index.ejs
 In `views/index.ejs`. We're going to setup a form, a couple of code snippets to pay attention to:
 
 ```html
-<form action="/movies" method="GET">`
-`action="/movies"`
+<form action="/movies" method="GET">
 ```
 - Tells the browser where to send the request when the form is submitted, in our case: `/movies`
 

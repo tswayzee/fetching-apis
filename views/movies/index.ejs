@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results for <%= query %></title>
+    </head>
+    <body>
+    <a href="/">Back</a>
+    <h1>Results for: <%= query %></h1>
+
+    <form action="/movies" method="GET">
+        <input type="text" name="q" value="<%= query %>" />
+        <button type="submit">Search</button>
+    </form>
+
+    <% if (error) { %>
+        <p><strong>Error:</strong> <%= error %></p>
+    <% } %>
+
+    <% if (!error && details.length === 0) { %>
+        <p>No results.</p>
+    <% } %>
+
+    <ul>
+        <% details.forEach(detail => { %>
+        <li>
+            <strong><%= detail.Title %></strong> (<%= detail.Year %>)
+            <% if (detail.Poster && detail.Poster !== "N/A") { %>
+            <div>
+                <img src="<%= detail.Poster %>" alt="<%= detail.Title %>" width="120" />
+            </div>
+            <% } %>
+        </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

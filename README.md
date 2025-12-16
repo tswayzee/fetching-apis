@@ -25,7 +25,7 @@ Example: Your app asks OMDb: "Search movies titled 'Batman'." OMDb responds with
 ##### Option 1: Clone the project
 - Clone repo: `git clone https://github.com/tswayzee/fetching-apis.git`
 - Install Dependencies: `npm i`
-- Get and add [OMDb API key]([#:movie_camera:-get-an-omdb-api-key](https://github.com/tswayzee/fetching-apis?tab=readme-ov-file#movie_camera-get-an-omdb-api-key)) to `.env`
+- Get and add [OMDb API key](https://github.com/tswayzee/fetching-apis?tab=readme-ov-file#movie_camera-get-an-omdb-api-key) to `.env`
 - Run project: `nodemon`
 
 ##### Option 2: Go through the walkthrough step-by-step

@@ -86,7 +86,7 @@ In reference to the OMDb docs, here's a few of the parameters:
 :musical_note: *You can also test the URL within Postman.*
 
 The **JSON Response** from the request will look like this:
-```
+```json
 {
     "Search": [
         {
@@ -168,7 +168,7 @@ The **JSON Response** from the request will look like this:
 ## :trident: Let's Code!
 
 #### :feet: **Step 1**: Add the following starter code in `server.js`:
-```
+```js
 // DEPENDENCIES
 const express = require("express");
 require("dotenv").config();
@@ -184,7 +184,7 @@ app.listen(PORT, () => {
 Run the server: `node server.js` or `nodemon`
 
 #### :feet: **Step 2**: Add middleware to read form and URL query data:
-```
+```js
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -196,7 +196,7 @@ app.use(express.urlencoded({ extended: true }));
 #### :feet: **Step 3.1**: Add a "home" route that renders a search page using `ejs`.
 
 Create folders/files:
-```
+```bash
 mkdir views
 touch views/index.ejs
 ```
@@ -211,7 +211,7 @@ In `views/index.ejs`. We're going to setup a form, a couple of code snippets to 
 - The input field allows the user to type in a search term. The `name="q"` attribute defines the key used in the query string, so whatever the user enters can be accessed in `server.js` using `req.query.q`.
 
 :pushpin: Complete code for `views/index.ejs`:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -231,7 +231,7 @@ In `views/index.ejs`. We're going to setup a form, a couple of code snippets to 
 ```
 
 #### :feet: **Step 3.2**: Back in `server.js`, add the following to render the `index.ejs` template that searches for movies:
-```
+```js
 app.get("/", (req, res) => {
   res.render("index.ejs");
 });
@@ -244,7 +244,7 @@ app.get("/", (req, res) => {
 - Render results (in step 5!)
 
 :pushpin: Add to `server.js`
-```
+```js
 app.get('/movies', async (req, res) => {
     try {
         // querying user search, saving it to variable
@@ -285,7 +285,7 @@ Reviewing the data flow:
 5) Browser displays the results
 
 First off, create a movies view folder + file:
-```
+```bash
 mkdir views/movies
 touch views/movies/index.ejs
 ```
@@ -295,7 +295,7 @@ touch views/movies/index.ejs
 
 `details` is a property passed from `res.render`, the following code snippet is iterating through that array of objects and displaying the query data:
 
-```
+```html
 <ul>
     <% details.forEach(detail => { %>
     <li>
@@ -311,7 +311,7 @@ touch views/movies/index.ejs
 ```
 
 :pushpin: Complete code for `views/movies/index.ejs`
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

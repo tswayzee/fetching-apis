@@ -1,4 +1,4 @@
-# Fetching APIs with `fetch()` in JavaScript
+# :rocket: Fetching APIs with `fetch()` in JavaScript
 
 
 ## :books: Learning Goal
@@ -22,6 +22,13 @@ Example: Your app asks OMDb: "Search movies titled 'Batman'." OMDb responds with
 - Work with data that isn’t stored in your own database
 
 ## :computer: Setup
+##### Option 1: Clone the project
+- Clone repo: `git clone https://github.com/tswayzee/fetching-apis.git`
+- Install Dependencies: `npm i`
+- Get and add [OMDb API key](#:movie_camera:-get-an-omdb-api-key) to `.env`
+- Run project: `nodemon`
+
+##### Option 2: Go through the walkthrough step-by-step
 1) Create and initialize your project with the following commands:
    - Create project directory: `mkdir fetching-apis`
    - Change directory: `cd fetching-apis`

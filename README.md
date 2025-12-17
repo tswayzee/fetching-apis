@@ -21,6 +21,21 @@ Example: Your app asks OMDb: "Search movies titled 'Batman'." OMDb responds with
 - Get data from a third-party API (movies, weather, maps, etc.)
 - Work with data that isn’t stored in your own database
 
+From the [mdn docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch):
+To make a request, call `fetch()`, passing in...
+1) a definition of the resource to fetch. This can be any one of:
+   - a string containing the URL
+   - an object, such as an instance of URL, which has a stringifier that produces a string containing the URL
+   - a Request instance
+2) optionally, an object containing options to configure the request.
+
+By default, `fetch()` makes a GET request, but you can use the method option to use a different request method:
+```js
+const response = await fetch("https://example.org/post", {
+  method: "POST",
+  // …
+});
+```
 ## :computer: Setup
 ##### Option 1: Clone the project
 - Clone repo: `git clone https://github.com/tswayzee/fetching-apis.git`

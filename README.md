@@ -1,5 +1,6 @@
 # :rocket: Fetching APIs with `fetch()` in JavaScript
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)[![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?logo=node.js&logoColor=fff)](https://nodejs.org/)[![Express](https://img.shields.io/badge/Express-Web%20Framework-000000?logo=express&logoColor=fff)](https://expressjs.com/)[![EJS](https://img.shields.io/badge/EJS-Templates-A91E50?logo=ejs&logoColor=fff)](https://ejs.co/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)[![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?logo=node.js&logoColor=fff)](https://nodejs.org/)[![Express](https://img.shields.io/badge/Express-Web%20Framework-000000?logo=express&logoColor=fff)](https://expressjs.com/)[![EJS](https://img.shields.io/badge/EJS-Templates-A91E50?logo=ejs&logoColor=fff)](https://ejs.co/)[![OMDb API](https://img.shields.io/badge/API-OMDb-blue)](https://www.omdbapi.com/)
+
 
 ## :books: Learning Goal
 This project is in reference to the [Consuming an API Level Up](https://generalassembly.instructure.com/courses/1243/pages/consuming-an-api?module_item_id=134107). The goal here is to showcase how to consume API data within an express application. By the end of this walkthrough, you will be able to:

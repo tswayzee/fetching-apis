@@ -263,7 +263,7 @@ app.get("/", (req, res) => {
 - Convert to JSON with `response.json()`
 - Render results (in step 5!)
 
-:pushpin: Add the key to `server.js`
+:pushpin: Add this new route to `server.js`
 
 ```js
 app.get('/movies', async (req, res) => {
